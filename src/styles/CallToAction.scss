@@ -1,0 +1,29 @@
+.call-to-action {
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .cta-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      color: white;
+      text-align: center;
+      h1 {
+        font-size: 3rem;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        background-color: #ff7f50;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+  
