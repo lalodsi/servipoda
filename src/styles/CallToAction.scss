@@ -1,25 +1,38 @@
 .call-to-action {
-    position: relative;
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 30em;
+    width: 100%;
+    padding-top: 40px;
     img {
       width: 100%;
       height: auto;
       object-fit: cover;
     }
     .cta-message {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, 0%);
+      width: 50%;
+      height: 400px;
       color: white;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
       h1 {
         font-size: 3rem;
+        margin: 0px;
+      }
+      h3 {
+        font-size: 2rem;
       }
       button {
         margin-top: 20px;
         padding: 10px 20px;
         font-size: 1.5rem;
-        background-color: #ff7f50;
+        background-color: #006928;
         border: none;
         color: white;
         cursor: pointer;
