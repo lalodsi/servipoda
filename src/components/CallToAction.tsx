@@ -9,7 +9,7 @@ const CallToAction: React.FC = () => {
       <div className="cta-message">
         <h1>Servipoda</h1>
         <h3>Poda y Derribo de Árboles, Control de Plagas y Abono</h3>
-        <button>Contacta Ahora</button>
+        <button>Cotiza Ahora</button>
       </div>
     </section>
   );

@@ -1,19 +1,32 @@
+@import "./_variables";
+
+
 .call-to-action {
     background-image: url("../assets/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 30em;
+    height: 35em;
     width: 100%;
-    padding-top: 40px;
+    // padding-top: 40px;
+    display: flex;
+    align-items: center;
     img {
       width: 100%;
       height: auto;
       object-fit: cover;
     }
     .cta-message {
-      width: 50%;
-      height: 400px;
+      @media (max-width: $screen-small){
+        width: 100%;
+      }
+      @media (min-width: $screen-small) and (max-width: $screen-large){
+        width: 50%;
+      }
+      @media (min-width: $screen-large){
+        width: 50%;
+      }
+      height: 300px;
       color: white;
       text-align: center;
       display: flex;
@@ -22,17 +35,17 @@
       background-color: rgba(0, 0, 0, 0.5);
       padding: 20px;
       h1 {
-        font-size: 3rem;
+        font-size: 5rem;
         margin: 0px;
       }
       h3 {
-        font-size: 2rem;
+        font-size: 1rem;
       }
       button {
         margin-top: 20px;
         padding: 10px 20px;
         font-size: 1.5rem;
-        background-color: #006928;
+        background-color: #00000000;
         border: none;
         color: white;
         cursor: pointer;
