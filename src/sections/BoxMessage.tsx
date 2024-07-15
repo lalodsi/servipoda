@@ -1,4 +1,3 @@
-import React from 'react'
 import '../styles/BoxMessage.scss';
 
 const message = "Ofrecemos personal calificado y tecnología adecuada para reducir costos y tiempos, garantizando un servicio eficiente y confiable."
