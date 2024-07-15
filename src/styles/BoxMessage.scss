@@ -1,0 +1,23 @@
+@import './variables';
+
+.BoxMessageContainer{
+    width: 100%;
+    height: 40rem;
+    background-color: $dark-background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .BoxMessage{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $light-background;
+        width: 70%;
+        height: 30%;
+        color: $text-dark;
+        font-size: 30px;
+        text-align: center;
+        // vertical-align: middle;
+    }
+}
