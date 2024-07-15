@@ -20,24 +20,26 @@ const Services: React.FC = () => {
 
   return (
     <section className="services">
-      <div className="services-list">
-        <div className='title'>
-          <h2>Contamos con una extensa variedad de servicios</h2>
-        </div>
-        <ul>
-          {services.map(service => (
-            <li 
-              key={service.name} 
-              onMouseEnter={() => setSelectedService(service.image)} 
-              onMouseLeave={() => null}
-            >
-              {service.name}
-            </li>
-          ))}
-        </ul>
+      <div className='title'>
+        <h2>Contamos con una extensa variedad de servicios</h2>
       </div>
-      <div className="service-image">
-        {selectedService && <img src={selectedService} alt="Servicio" />}
+      <div className="content">
+        <div className="services-list">
+          <ul>
+            {services.map(service => (
+              <li 
+                key={service.name} 
+                onMouseEnter={() => setSelectedService(service.image)} 
+                onMouseLeave={() => null}
+              >
+                {service.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="service-image">
+          {selectedService && <img src={selectedService} alt="Servicio" />}
+        </div>
       </div>
     </section>
   );
