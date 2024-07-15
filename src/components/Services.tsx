@@ -29,7 +29,7 @@ const Services: React.FC = () => {
             <li 
               key={service.name} 
               onMouseEnter={() => setSelectedService(service.image)} 
-              onMouseLeave={() => setSelectedService(null)}
+              onMouseLeave={() => null}
             >
               {service.name}
             </li>
