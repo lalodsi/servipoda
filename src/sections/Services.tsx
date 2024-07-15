@@ -19,7 +19,7 @@ const Services: React.FC = () => {
   const [selectedService, setSelectedService] = useState<string | null>(null);
 
   return (
-    <section className="services">
+    <section id='services' className="services">
       <div className='title'>
         <h2>Contamos con una extensa variedad de servicios</h2>
       </div>

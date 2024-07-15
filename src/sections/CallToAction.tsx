@@ -4,7 +4,7 @@ import '../styles/CallToAction.scss';
 
 const CallToAction: React.FC = () => {
   return (
-    <section className="call-to-action">
+    <section id='start' className="call-to-action">
       {/* <img src={companyImage} alt="Empresa de Poda y Derribos" /> */}
       <div className="cta-message">
         <h1>Servipoda</h1>
