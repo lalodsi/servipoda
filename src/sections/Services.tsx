@@ -6,13 +6,15 @@ interface service {
   image: string,
 }
 
+const SOURCE_LINK = "https://github.com/lalodsi/servipoda/blob/master/src/assets/images/"
+
 const services: service[] = [
-  { name: 'Poda de árboles y palmeras de cualquier diámetro y altura', image: '/src/assets/images/service1.jpg' },
-  { name: 'Derribo de árboles y palmeras de alto riesgo', image: '/src/assets/images/service2.jpg' },
-  { name: 'Retiro de residuos (hojas, ramas, troncos)', image: '/src/assets/images/service3.jpg' },
-  { name: 'Trámites de poda y derribo ante alcaldías y municipios', image: '/src/assets/images/service4.jpg' },
-  { name: 'Fumigación y tratamiento de árboles enfermos', image: '/src/assets/images/service5.jpg' },
-  { name: 'Mantenimiento preventivo y correctivo de areas verdes', image: '/src/assets/images/service6.jpg' },
+  { name: 'Poda de árboles y palmeras de cualquier diámetro y altura', image: SOURCE_LINK + 'service1.jpg' },
+  { name: 'Derribo de árboles y palmeras de alto riesgo', image: SOURCE_LINK + 'service2.jpg' },
+  { name: 'Retiro de residuos (hojas, ramas, troncos)', image: SOURCE_LINK + 'service3.jpg' },
+  { name: 'Trámites de poda y derribo ante alcaldías y municipios', image: SOURCE_LINK + 'service4.jpg' },
+  { name: 'Fumigación y tratamiento de árboles enfermos', image: SOURCE_LINK + 'service5.jpg' },
+  { name: 'Mantenimiento preventivo y correctivo de areas verdes', image: SOURCE_LINK + 'service6.jpg' },
 ];
 
 const Services: React.FC = () => {
