@@ -8,16 +8,24 @@ type TimelineStep = {
 
 const timelineSteps: TimelineStep[] = [
     {
-      title: "Fundación",
-      description: "La compañía fue fundada en 2010.",
+      title: "Paso 1",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus animi nostrum quas ratione iure voluptatem molestias unde assumenda exercitationem aliquid eum a totam eligendi quibusdam esse sit, ducimus ab!",
     },
     {
-      title: "Primer Producto",
-      description: "Lanzamiento del primer producto en 2012.",
+      title: "Paso 2",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus animi nostrum quas ratione iure voluptatem molestias unde assumenda exercitationem aliquid eum a totam eligendi quibusdam esse sit, ducimus ab!",
     },
     {
-      title: "Expansión Global",
-      description: "Expansión a nivel global en 2015.",
+      title: "Paso 3",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus animi nostrum quas ratione iure voluptatem molestias unde assumenda exercitationem aliquid eum a totam eligendi quibusdam esse sit, ducimus ab!",
+    },
+    {
+      title: "Paso 4",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus animi nostrum quas ratione iure voluptatem molestias unde assumenda exercitationem aliquid eum a totam eligendi quibusdam esse sit, ducimus ab!",
+    },
+    {
+      title: "Paso 5",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus animi nostrum quas ratione iure voluptatem molestias unde assumenda exercitationem aliquid eum a totam eligendi quibusdam esse sit, ducimus ab!",
     },
 ];
 
