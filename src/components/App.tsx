@@ -4,6 +4,7 @@ import CallToActionSection from '../sections/CallToAction';
 import ServicesSection from '../sections/Services';
 import BoxMessageSection from '../sections/BoxMessage';
 import NavbarComponent from '../components/NavbarComponent';
+import Timeline from '../sections/Timeline';
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <CallToActionSection />
       <ServicesSection />
       <BoxMessageSection />
+      <Timeline />
     </div>
   );
 };
