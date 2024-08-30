@@ -6,14 +6,19 @@ import BoxMessageSection from '../sections/BoxMessage';
 import NavbarComponent from '../components/NavbarComponent';
 import Timeline from '../sections/Timeline';
 
+const message1 = "Ofrecemos personal calificado y tecnología adecuada para reducir costos y tiempos, garantizando un servicio eficiente y confiable."
+const message2 = "Nota: Certificados ante Sedena (Secretaría de Desarrollo Ambiental)"
+
+
 const App: React.FC = () => {
   return (
     <div className="App">
       <NavbarComponent />
       <CallToActionSection />
       <ServicesSection />
-      <BoxMessageSection />
+      <BoxMessageSection message={message1} />
       <Timeline />
+      <BoxMessageSection message={message2} />
     </div>
   );
 };

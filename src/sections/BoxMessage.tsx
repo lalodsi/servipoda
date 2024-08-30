@@ -1,8 +1,10 @@
 import '../styles/BoxMessage.scss';
+interface BoxMessageProps{
+  message: string
+}
 
-const message = "Ofrecemos personal calificado y tecnología adecuada para reducir costos y tiempos, garantizando un servicio eficiente y confiable."
-
-const BoxMessage = () => {
+const BoxMessage: React.FC<BoxMessageProps> = (props) => {
+  const { message } = props
   return (
     <div className='BoxMessageContainer'>
         <div className="BoxMessage">

@@ -1,7 +1,12 @@
+.timeline-header{
+  text-align: center;
+  color: aliceblue;
+}
 .timeline-container{
     width: 100%;
     display: flex;
     justify-content: center;
+
     .timeline {
         width: 100%;
         display: flex;
@@ -19,7 +24,6 @@
             width: 2px;
             background-color: #ccc;
         }
-      
         .timeline-item {
           position: relative;
           margin-bottom: 20px;
@@ -67,6 +71,11 @@
             border-radius: 4px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
           }
+        }
+
+        .timeline-item_last{
+          position: relative;
+          margin-bottom: 20px;
         }
       }
 }
