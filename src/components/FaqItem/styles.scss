@@ -1,0 +1,28 @@
+.faq-item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+  
+    .faq-question {
+      cursor: pointer;
+      font-weight: bold;
+      padding: 0.5rem 0;
+      user-select: none;
+  
+      &:hover {
+        color: #007bff;
+      }
+    }
+  
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+  
+      &.open {
+        max-height: 300px; // Ajusta este valor según el tamaño de tus respuestas
+        padding-top: 1rem;
+      }
+    }
+  }
+  
