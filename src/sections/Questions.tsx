@@ -1,5 +1,6 @@
 import React from 'react'
 import FaqList from '../components/FaqList/'
+import "../styles/Questions.scss"
 
 interface Question{
     question: string;
@@ -44,8 +45,10 @@ const questions: Question[] = [
 const Questions = () => {
   return (
     <>
-        <h2>Preguntas Frecuentes</h2>
-        <FaqList items={questions} />
+        <div className='FaqContainer'>
+          <h2>Preguntas Frecuentes</h2>
+          <FaqList items={questions} />
+        </div>
     </>
   )
 }

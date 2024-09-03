@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles.scss'; // Archivo para estilos
+import './styles.scss';
 
 interface FaqItemProps {
   question: string;
