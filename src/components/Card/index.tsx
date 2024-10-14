@@ -1,4 +1,3 @@
-import React from 'react'
 import "./styles.scss"
 
 const IMAGE = 'https://github.com/lalodsi/servipoda/blob/master/src/assets/images/service1.jpg?raw=true'

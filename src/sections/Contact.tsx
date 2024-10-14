@@ -1,4 +1,3 @@
-import React from 'react'
 import "../styles/Contact.scss"
 import CardComponent from '../components/Card'
 import ContactForm from '../components/ContactForm'

@@ -1,4 +1,3 @@
-import React from 'react'
 import FaqList from '../components/FaqList/'
 import "../styles/Questions.scss"
 
