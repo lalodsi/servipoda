@@ -1,0 +1,14 @@
+.Contact{
+  height: 45rem;
+  display: flex;
+  .Contact-Cards{
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .Contact-Form{
+    width: 40%;
+  }
+}
