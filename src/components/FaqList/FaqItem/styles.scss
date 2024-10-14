@@ -1,16 +1,21 @@
+@import '../../../styles/variables';
+
 .faq-item {
     margin-bottom: 1rem;
+    margin-left: 1rem;
     border-bottom: 1px solid #ccc;
     padding-bottom: 1rem;
+    // border: 2px solid blue;
   
     .faq-question {
       cursor: pointer;
       font-weight: bold;
       padding: 0.5rem 0;
       user-select: none;
+      color: #f0ffff;
   
       &:hover {
-        color: #007bff;
+        color: $light-background;
       }
     }
   
@@ -18,6 +23,7 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s ease, padding 0.3s ease;
+      color: white;
   
       &.open {
         max-height: 300px; // Ajusta este valor según el tamaño de tus respuestas

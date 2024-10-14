@@ -46,7 +46,7 @@ const Questions = () => {
   return (
     <>
         <div className='FaqContainer'>
-          <h2>Preguntas Frecuentes</h2>
+          <h2 className='FaqContainer_Header'>Preguntas Frecuentes</h2>
           <FaqList items={questions} />
         </div>
     </>
