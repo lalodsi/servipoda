@@ -1,4 +1,4 @@
-import '../styles/BoxMessage.scss';
+import '@styles/BoxMessage.scss';
 interface BoxMessageProps{
   message: string
 }

@@ -1,5 +1,5 @@
-import FaqList from '../components/FaqList/'
-import "../styles/Questions.scss"
+import FaqList from '@components/FaqList/'
+import "@styles/Questions.scss"
 
 interface Question{
     question: string;

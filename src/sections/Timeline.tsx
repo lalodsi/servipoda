@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Timeline.scss'; // Importa los estilos en Sass
+import '@styles/Timeline.scss'; // Importa los estilos en Sass
 
 type TimelineStep = {
     title: string;

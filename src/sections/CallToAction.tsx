@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/CallToAction.scss';
+import '@styles/CallToAction.scss';
 // import companyImage from '../assets/images/company.jpg';
 
 const CallToAction: React.FC = () => {

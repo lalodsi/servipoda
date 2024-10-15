@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Services.scss';
+import '@styles/Services.scss';
 
 interface service {
   name: string,
