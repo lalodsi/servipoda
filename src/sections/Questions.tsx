@@ -17,7 +17,7 @@ const faqs: Question[] = [
   },
   {
     question: "¿Qué pasa con los desechos del árbol después del trabajo?",
-    answer: "Nos encargamos de recoger y disponer de los restos del árbol de manera adecuada. También ofrecemos opciones de reciclaje o uso de la madera, si el cliente lo desea."
+    answer: "Nos encargamos de recoger y disponer de los restos del árbol de manera adecuada."
   },
   {
     question: "¿Es necesario pedir un permiso del gobierno para podar o derribar un árbol?",
@@ -28,20 +28,12 @@ const faqs: Question[] = [
     answer: "Contamos con equipos de protección especializados, herramientas certificadas y personal capacitado para garantizar la seguridad de las personas, propiedades y trabajadores."
   },
   {
-    question: "¿Ofrecen servicios de emergencia en caso de árboles caídos o ramas peligrosas?",
-    answer: "Sí, tenemos un servicio de emergencia disponible las 24 horas para atender situaciones urgentes como árboles caídos o ramas que representen un riesgo."
-  },
-  {
     question: "¿Cuánto tiempo toma podar o derribar un árbol?",
     answer: "El tiempo varía según el tamaño y la ubicación del árbol, pero la mayoría de los trabajos se completan en un día. Te daremos un estimado más preciso tras evaluar la situación."
   },
   {
     question: "¿Trabajan en áreas residenciales y comerciales?",
     answer: "Sí, ofrecemos nuestros servicios tanto en áreas residenciales como comerciales, adaptándonos a las necesidades de cada cliente."
-  },
-  {
-    question: "¿Qué tipos de árboles pueden podar o derribar?",
-    answer: "Podemos trabajar con cualquier tipo de árbol, desde frutales y ornamentales hasta árboles grandes y viejos, siempre evaluando las mejores técnicas para cada caso."
   },
   {
     question: "¿Ofrecen algún tipo de garantía por sus servicios?",
