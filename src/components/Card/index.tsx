@@ -1,8 +1,5 @@
 import { ReactNode } from "react";
 import "./styles.scss"
-import { FaWhatsapp } from "react-icons/fa";
-
-const IMAGE = 'https://github.com/lalodsi/servipoda/blob/master/src/assets/images/service1.jpg?raw=true'
 
 export interface CardComponentProps{
   title: string,
