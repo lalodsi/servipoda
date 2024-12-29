@@ -35,7 +35,7 @@ const Timeline: React.FC = () => {
           {timelineSteps.map((step, index) => {
             const itemClassName = index !== timelineLength? "timeline-item" : "timeline-item_last"
             return (
-              <div key={index} className={itemClassName}>
+              <div key={index} className={itemClassName + ' active'}>
                   <div className="timeline-content">
                       <h3>{step.title}</h3>
                       <p>{step.description}</p>
