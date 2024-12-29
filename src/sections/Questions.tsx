@@ -6,47 +6,56 @@ interface Question{
     answer: string;
 }
 
-const questions: Question[] = [
-    {
-        question: "¿Qué es el Big Bang?",
-        answer: "El Big Bang es la teoría que explica el origen del universo, según la cual toda la materia y energía del universo estaban concentradas en un solo punto extremadamente denso y caliente que comenzó a expandirse hace aproximadamente 13.8 mil millones de años."
-      },
-      {
-        question: "¿Qué es un agujero negro?",
-        answer: "Un agujero negro es una región del espacio donde la gravedad es tan fuerte que nada, ni siquiera la luz, puede escapar de ella. Se forma cuando una estrella masiva colapsa al final de su ciclo de vida."
-      },
-      {
-        question: "¿Qué es la materia oscura?",
-        answer: "La materia oscura es una forma de materia que no emite, absorbe ni refleja luz, por lo que no puede ser observada directamente. Sin embargo, su existencia se infiere a partir de los efectos gravitacionales que ejerce sobre la materia visible en el universo."
-      },
-      {
-        question: "¿Qué es la energía oscura?",
-        answer: "La energía oscura es una forma de energía que se cree está impulsando la expansión acelerada del universo. Aunque no se comprende completamente, constituye aproximadamente el 68% del contenido total del universo."
-      },
-      {
-        question: "¿Cuántas galaxias hay en el universo?",
-        answer: "Se estima que hay más de 2 billones de galaxias en el universo observable. Cada galaxia contiene millones o incluso miles de millones de estrellas."
-      },
-      {
-        question: "¿Qué es una supernova?",
-        answer: "Una supernova es una explosión estelar masiva que ocurre al final del ciclo de vida de una estrella. Esta explosión libera una gran cantidad de energía y puede superar en brillo a la galaxia entera por un corto período de tiempo."
-      },
-      {
-        question: "¿Qué es un exoplaneta?",
-        answer: "Un exoplaneta es un planeta que orbita una estrella fuera de nuestro sistema solar. Hasta la fecha, se han descubierto miles de exoplanetas en la Vía Láctea."
-      },
-      {
-        question: "¿Qué es la teoría de la relatividad?",
-        answer: "La teoría de la relatividad es una teoría formulada por Albert Einstein que describe cómo el espacio y el tiempo están interrelacionados y cómo la gravedad afecta el movimiento de los objetos en el universo."
-      }
-]
+const faqs: Question[] = [
+  {
+    question: "¿Cuánto cuesta podar o derribar un árbol?",
+    answer: "El costo depende del tamaño del árbol, su ubicación y la complejidad del trabajo. Ofrecemos cotizaciones personalizadas sin costo."
+  },
+  {
+    question: "¿Tienen licencia o permisos para derribar árboles?",
+    answer: "Sí, contamos con los permisos necesarios para realizar derribos de acuerdo con las normativas locales."
+  },
+  {
+    question: "¿Qué pasa con los desechos del árbol después del trabajo?",
+    answer: "Nos encargamos de recoger y disponer de los restos del árbol de manera adecuada. También ofrecemos opciones de reciclaje o uso de la madera, si el cliente lo desea."
+  },
+  {
+    question: "¿Es necesario pedir un permiso del gobierno para podar o derribar un árbol?",
+    answer: "En algunos casos sí, especialmente si se trata de especies protegidas. Podemos asesorarte y ayudarte con la gestión del permiso si es necesario."
+  },
+  {
+    question: "¿Qué medidas de seguridad utilizan durante el trabajo?",
+    answer: "Contamos con equipos de protección especializados, herramientas certificadas y personal capacitado para garantizar la seguridad de las personas, propiedades y trabajadores."
+  },
+  {
+    question: "¿Ofrecen servicios de emergencia en caso de árboles caídos o ramas peligrosas?",
+    answer: "Sí, tenemos un servicio de emergencia disponible las 24 horas para atender situaciones urgentes como árboles caídos o ramas que representen un riesgo."
+  },
+  {
+    question: "¿Cuánto tiempo toma podar o derribar un árbol?",
+    answer: "El tiempo varía según el tamaño y la ubicación del árbol, pero la mayoría de los trabajos se completan en un día. Te daremos un estimado más preciso tras evaluar la situación."
+  },
+  {
+    question: "¿Trabajan en áreas residenciales y comerciales?",
+    answer: "Sí, ofrecemos nuestros servicios tanto en áreas residenciales como comerciales, adaptándonos a las necesidades de cada cliente."
+  },
+  {
+    question: "¿Qué tipos de árboles pueden podar o derribar?",
+    answer: "Podemos trabajar con cualquier tipo de árbol, desde frutales y ornamentales hasta árboles grandes y viejos, siempre evaluando las mejores técnicas para cada caso."
+  },
+  {
+    question: "¿Ofrecen algún tipo de garantía por sus servicios?",
+    answer: "Sí, garantizamos un trabajo profesional y seguro. Si tienes alguna inquietud después del servicio, estaremos disponibles para atenderla."
+  }
+];
+
 
 const Questions = () => {
   return (
     <>
         <div className='FaqContainer'>
           <h2 className='FaqContainer_Header'>Preguntas Frecuentes</h2>
-          <FaqList items={questions} />
+          <FaqList items={faqs} />
         </div>
     </>
   )
