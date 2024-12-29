@@ -2,26 +2,18 @@ import { ReactNode } from "react";
 import "./styles.scss"
 
 export interface CardComponentProps{
-  title: string,
-  img: ReactNode,
-  description: string
+  children: ReactNode
 }
 
-const CardComponent: React.FC<CardComponentProps> = (props) => {
+const Card: React.FC<CardComponentProps> = (props) => {
   const {
-    title,
-    img,
-    description
+    children
   } = props
   return (
     <div className='Card'>
-        <div className="Card-Image">
-          {img}
-        </div>
-        <div className="Card-Title">{title}</div>
-        <div className="Card-Description">{description}</div>
+        {children}
     </div>
   )
 }
 
-export default CardComponent
+export default Card

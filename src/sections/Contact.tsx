@@ -1,8 +1,9 @@
 import "@styles/Contact.scss"
-import CardComponent, { CardComponentProps } from '@components/Card'
+import CardComponent, { CardComponentProps } from '@components/ContactCard'
 import ContactForm from '@components/ContactForm'
 import { FaWhatsapp, FaPhoneAlt  } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Card from "@components/Card";
 
 const contactTypes: CardComponentProps[] = [
   { title: 'Teléfono', description: '+52 55 1234 5678', img: (<FaPhoneAlt size={100} />)},
@@ -24,7 +25,9 @@ const ContactSection = () => {
           }
         </div>
         <div className="Contact-Form">
+          <Card>
             <ContactForm />
+          </Card>
         </div>
     </div>
   )

@@ -1,5 +1,6 @@
-.Card{
-    width: 100%;
+.ContactCard{
+    width: 230px;
+    height: 290px;
     border: 2px solid white;
     background-color: aliceblue;
     display: flex;
@@ -11,4 +12,16 @@
     margin-right: 15px;
     margin-bottom: 15px;
 
+    .Card-Description{
+        font-size: 15px;
+    }
+    .Card-Title{
+        font-size: 20px;
+    }
+    .Card-Image{
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
 }

@@ -1,0 +1,21 @@
+.ContactForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .input{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .buttonSubmit{
+        height: 35px;
+        background-color: rgb(255, 255, 255);
+        border: 3px solid rgb(0, 130, 59);
+    }
+
+    .errorMessage{
+        color: red;
+    }
+}
