@@ -13,7 +13,7 @@ const contactTypes: CardComponentProps[] = [
 
 const ContactSection = () => {
   return (
-    <div className='Contact'>
+    <div id="contact" className='Contact'>
         <div className="Contact-Cards">
           {
             contactTypes.map(contactData => (

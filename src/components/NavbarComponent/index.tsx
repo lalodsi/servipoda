@@ -20,10 +20,19 @@ const Navbar: React.FC = () => {
       </div>
       <ul className={`navbar-menu ${isOpen ? 'open' : ''}`}>
         <li>
-          <button onClick={() => scrollToSection('start')}>Home</button>
+          <button onClick={() => scrollToSection('start')}>Servipoda</button>
         </li>
         <li>
-          <button onClick={() => scrollToSection('services')}>About</button>
+          <button onClick={() => scrollToSection('services')}>Servicios</button>
+        </li>
+        <li>
+          <button onClick={() => scrollToSection('process')}>Nuestro Proceso</button>
+        </li>
+        <li>
+          <button onClick={() => scrollToSection('faqs')}>Preguntas Frecuentes</button>
+        </li>
+        <li>
+          <button onClick={() => scrollToSection('contact')}>Contacto</button>
         </li>
       </ul>
     </nav>

@@ -44,12 +44,12 @@ const faqs: Question[] = [
 
 const Questions = () => {
   return (
-    <>
+    <div id='faqs'>
         <div className='FaqContainer'>
           <h2 className='FaqContainer_Header'>Preguntas Frecuentes</h2>
           <FaqList items={faqs} />
         </div>
-    </>
+    </div>
   )
 }
 

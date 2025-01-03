@@ -29,7 +29,7 @@ const Timeline: React.FC = () => {
   const timelineLength = timelineSteps.length
   return (
     <>
-      <h2 className='timeline-header'>Nuestro Proceso</h2>
+      <h2 id='process' className='timeline-header'>Nuestro Proceso</h2>
       <div className="timeline-container">
           <div className="timeline">
           {timelineSteps.map((step, index) => {
