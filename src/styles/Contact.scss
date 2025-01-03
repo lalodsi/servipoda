@@ -1,14 +1,37 @@
+@import './_variables';
+
 .Contact{
   height: 45rem;
   display: flex;
+
+  @media (min-width: $screen-medium) {
+    flex-direction: row;
+  }
+
+  @media (max-width: $screen-medium) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .Contact-Cards{
     padding: 20px;
-    width: 50%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    @media (min-width: $screen-medium) {
+      width: 50%;
+    }
+    @media (max-width: $screen-medium) {
+      width: 100%;
+    }
   }
   .Contact-Form{
-    width: 40%;
+    @media (min-width: $screen-medium) {
+      width: 40%;
+    }
+    @media (max-width: $screen-medium) {
+      width: 80%;
+    }
   }
 }
