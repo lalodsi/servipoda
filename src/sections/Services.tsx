@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '@styles/Services.scss';
 
 interface service {
@@ -22,7 +22,19 @@ const services: service[] = [
 const resolveLink = (src: string) => SOURCE_LINK + src + FINAL_LINK
 
 const Services: React.FC = () => {
+  const [isMobile, setIsMobile] = useState<boolean>(false)
   const [selectedService, setSelectedService] = useState<[string, string] | null>(null);
+
+  console.log({isMobile});
+  
+  useEffect(() => {
+    const updateIsMobile = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+    updateIsMobile()
+    window.addEventListener('resize', updateIsMobile);
+    return () => window.removeEventListener('resize', updateIsMobile);
+  }, [])
 
   return (
     <section id='services' className="services">
@@ -30,29 +42,49 @@ const Services: React.FC = () => {
         <h2>Contamos con una extensa variedad de servicios</h2>
       </div>
       <div className="content">
-        <div className="services-list">
-          <ul>
+        {
+          isMobile ?
+          (<div className='services-mobile'>
             {services.map(service => (
-              <li 
-                key={service.name} 
-                onMouseEnter={() => setSelectedService(service.image)}
-                onMouseLeave={() => null}
-              >
-                {service.name}
-              </li>
+              <div key={service.name} className="service-item">
+                <h3>{service.name}</h3>
+                <img
+                  src={resolveLink(service.image[1])}
+                  srcSet={`${resolveLink(service.image[0])} 600w, ${resolveLink(service.image[1])} 1280w`}
+                  sizes="(max-width: 600px) 80vw, (max-width: 1200px) 100vw, 250vh"
+                  alt={service.name}
+                />
+              </div>
             ))}
-          </ul>
-        </div>
-        <div className="service-image">
-          {selectedService && 
-            <img
-              src={resolveLink(selectedService[1])}
-              srcSet={resolveLink(selectedService[0]) + " 600w, " + resolveLink(selectedService[1]) + " 1280w"}
-              sizes='(max-width: 600px) 80vw, (max-width: 1200px) 100vw, 250vh'
-              alt="Servicio"
-            />
-          }
-        </div>
+          </div>)
+          : (
+            <>
+              <div className="services-list">
+                <ul>
+                  {services.map(service => (
+                    <li 
+                      key={service.name} 
+                      onMouseEnter={() => setSelectedService(service.image)}
+                      onMouseLeave={() => null}
+                    >
+                      {service.name}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="service-image">
+                {selectedService && 
+                  <img
+                    src={resolveLink(selectedService[1])}
+                    srcSet={resolveLink(selectedService[0]) + " 600w, " + resolveLink(selectedService[1]) + " 1280w"}
+                    sizes='(max-width: 600px) 80vw, (max-width: 1200px) 100vw, 250vh'
+                    alt="Servicio"
+                  />
+                }
+              </div>
+            </>
+          )
+        }
       </div>
     </section>
   );
