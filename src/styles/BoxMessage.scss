@@ -1,4 +1,4 @@
-@import './variables';
+@import './_variables';
 
 .BoxMessageContainer{
     width: 100%;
@@ -13,12 +13,19 @@
         align-items: center;
         justify-content: center;
         background-color: $light-background;
-        width: 70%;
-        height: 30%;
         color: $text-light;
-        font-size: 30px;
         text-align: center;
         font-weight: 700;
-        // vertical-align: middle;
+        @media (min-width: $screen-large) {
+            width: 70%;
+            height: 30%;
+            font-size: 30px;
+        }
+
+        @media (max-width: $screen-large){
+            width: 100%;
+            height: 30%;
+            font-size: 25px;
+        }
     }
 }
